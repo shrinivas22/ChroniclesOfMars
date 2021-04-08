@@ -7,22 +7,36 @@ import MobileNavToggler from './nav-toggler.component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class TopNavbar extends Component {
+    constructor(props){
+        super(props);
+            this.state={
+                menu: false
+            };
+            this.toggleMenu = this.toggleMenu.bind(this);
+
+        }
+        toggleMenu(e){
+            console.log(e);
+            this.setState({ menu: e})
+        }
+    
+
     render() {
+    const show = (this.state.menu) ? "show" : "" ;
+
         return (
 
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                <NavBrand text="React Router Example" />
-
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <NavBrand text="Todays NASA Image" />
+                <MobileNavToggler fromParent={this.toggleMenu}></MobileNavToggler>
+                <div className={"navbar-collapse collapse" + show} id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
-                        <li className="nav-item">
+                        <li class="nav-item active">
                             <NavLink className="nav-link" to="/" exact activeClass="active">
                                 Home
                             </NavLink>
                         </li>
-                        <li className="nav-item">
-
-                        </li>
+                        
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/roverData" activeClass="active">
                                 Rover Data

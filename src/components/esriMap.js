@@ -14,7 +14,6 @@ class EsriMap extends React.PureComponent {
       return (
 
         <div>
-          <div></div> 
         <EsriLoaderReact 
         style={{position:"absolute", margin:'200px'}}
           options={options} 

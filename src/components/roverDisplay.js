@@ -81,7 +81,7 @@
           <center><h1>Cameras</h1></center>
           
             <div>
-              <div style={{display: 'flex' , padding: '20px'}} >
+              <div style={{display: 'flex' , padding: '20px', overflowY:'auto'}} >
                 {this.props.roverdata.map((d,index) => (
                 <div key = {index} style={{padding: '20px'}} >
                 <div class="btnn"  value= {d.name} onClick={() => this.handleClick(d.name)}>{d.name}</div>

@@ -17,16 +17,11 @@
            this.fetchimagePath= this.fetchimagePath(this);
           
         }
-        //this.
-       
         state = {
         roversdata: [],currentRover: [],cameras:[], currentRover :'',landingDate: new Date('2010-02-10'),
         selectedDate: '',
         showCalender: false
-      }
-      
-
-   
+        }
 
     componentDidMount() {
          var API_key = "ZQjfcpCNtznB6aNuP99C5vaW6mRouJsIqVjGkuZP";
@@ -93,15 +88,6 @@
       this.setState({selectedDate:ISODate});
       console.log(ISODate);
     }*/
-    /*<div>
-                <div style={{display:'flex', margin: '-1px 0px 56px 65px'}}>
-            {this.onCameraDropdownSelected().map((d,index) => (
-              <div class="btnn" key = {index} value= {d} style={{padding: '20px',borderRadius: '50%', margin: '1% 2% 3% 5%'}} 
-               onClick={() => {this.onDropdownSelected(d)}}>{d}</div>
-              //<div key = {index} style={{padding: '20px',margin: '0px 77px 0px 77px'}} >{d}</div>
-            ))}
-            </div>
-            </div>*/
 
     render() {
         if (this.state.roversdata.length===0){
@@ -125,10 +111,10 @@
         return (
           <div class="rovercls">
             <div>
-            <div style={{display:'flex', margin: '33px 0px 0px 50px'}}>
+            <div style={{display:'flex', margin: '33px 0px 0px 50px', overflowY:'auto'}}>
             {this.onCameraDropdownSelected().map((d,index) => (
                 <div>
-                <img src = {require('./images/'+d+'.jpg').default}  key = {index}  width="250px" height="250px" style={{padding:'40px', borderRadius: '50%'}}>
+                <img src = {require('./images/'+d+'.jpg').default}  key = {index} height="150px" width="150px"   style={{padding:'40px', borderRadius: '50%'/*, height:'auto',width:'100%',maxWidth:'200px'*/}}>
                 </img>
                 <div class="btnn" key = {index} value= {d} style={{padding: '20px',borderRadius: '50%', margin: '1% 2% 3% 5%'}} 
                 onClick={() => {this.onDropdownSelected(d)}}>{d}</div>

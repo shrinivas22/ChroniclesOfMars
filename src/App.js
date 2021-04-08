@@ -22,7 +22,8 @@ class Apps extends React.PureComponent {
     script.type = 'text/javascript';
     script.innerHTML = "document.write('var x=new WarpSpeed('canvas')')";
     //document.body.appendChild(script);
-    const x=new WarpSpeed("canvas");
+    const ctx=new WarpSpeed("canvas");
+    console.log(ctx.clientWidth, ctx.clientHeight);
 }
 
   render() {
@@ -43,8 +44,8 @@ class Apps extends React.PureComponent {
     );*/ 
     return (
        <Router>
-        <div id="router-container">
-          <canvas id="canvas" class="canvcls" style={{height : '100%',width : '100%',position:'absolute'}}></canvas>
+        <div id="router-container" style={{height : '100%',width : '100%'}}>
+          <canvas id="canvas" style={{height : '100%',width : '100%',position:'absolute',zIndex:'-100'}}></canvas>
           <TopNavbar id="top-navbar"/> 
             <Switch>
               <Route path="/" exact component={AppData} />

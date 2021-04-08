@@ -62,7 +62,7 @@
     }
 
     function WarpSpeed(targetId,config){
-        console.log(config)
+        console.log(targetId,config)
         this.targetId=targetId;
         if(WarpSpeed.RUNNING_INSTANCES===undefined)WarpSpeed.RUNNING_INSTANCES={};
         if(WarpSpeed.RUNNING_INSTANCES[targetId]){WarpSpeed.RUNNING_INSTANCES[targetId].destroy();}
@@ -109,11 +109,13 @@
             }
             this.move();
             var canvas=document.getElementById(this.targetId);
+            //console.log(canvas.clientWidth, canvas.clientHeight);
             if(!this.PAUSED&&isVisible(canvas)){
                 if(this.prevW!==canvas.clientWidth||this.prevH!==canvas.clientHeight){
                     canvas.width=(canvas.clientWidth<10?10:canvas.clientWidth)*(window.devicePixelRatio||1);
                     canvas.height=(canvas.clientHeight<10?10:canvas.clientHeight)*(window.devicePixelRatio||1);
                 }
+                
                 this.size=(canvas.height<canvas.width?canvas.height:canvas.width)/(10/(this.STAR_SCALE<=0?0:this.STAR_SCALE));
                 if(this.WARP_EFFECT) this.maxLineWidth=this.size/30;
                 var ctx=canvas.getContext("2d");
