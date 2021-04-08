@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ChroniclesOfMars/static/css/main.12c65564.chunk.css",
-    "main.js": "/ChroniclesOfMars/static/js/main.45c069a6.chunk.js",
-    "main.js.map": "/ChroniclesOfMars/static/js/main.45c069a6.chunk.js.map",
+    "main.css": "/ChroniclesOfMars/static/css/main.dfc8d254.chunk.css",
+    "main.js": "/ChroniclesOfMars/static/js/main.3d48b4e8.chunk.js",
+    "main.js.map": "/ChroniclesOfMars/static/js/main.3d48b4e8.chunk.js.map",
     "runtime-main.js": "/ChroniclesOfMars/static/js/runtime-main.99a9b73b.js",
     "runtime-main.js.map": "/ChroniclesOfMars/static/js/runtime-main.99a9b73b.js.map",
     "static/css/2.f3e600bc.chunk.css": "/ChroniclesOfMars/static/css/2.f3e600bc.chunk.css",
-    "static/js/2.28903c96.chunk.js": "/ChroniclesOfMars/static/js/2.28903c96.chunk.js",
-    "static/js/2.28903c96.chunk.js.map": "/ChroniclesOfMars/static/js/2.28903c96.chunk.js.map",
+    "static/js/2.f45b220c.chunk.js": "/ChroniclesOfMars/static/js/2.f45b220c.chunk.js",
+    "static/js/2.f45b220c.chunk.js.map": "/ChroniclesOfMars/static/js/2.f45b220c.chunk.js.map",
     "index.html": "/ChroniclesOfMars/index.html",
     "static/css/2.f3e600bc.chunk.css.map": "/ChroniclesOfMars/static/css/2.f3e600bc.chunk.css.map",
-    "static/css/main.12c65564.chunk.css.map": "/ChroniclesOfMars/static/css/main.12c65564.chunk.css.map",
-    "static/js/2.28903c96.chunk.js.LICENSE.txt": "/ChroniclesOfMars/static/js/2.28903c96.chunk.js.LICENSE.txt",
+    "static/css/main.dfc8d254.chunk.css.map": "/ChroniclesOfMars/static/css/main.dfc8d254.chunk.css.map",
+    "static/js/2.f45b220c.chunk.js.LICENSE.txt": "/ChroniclesOfMars/static/js/2.f45b220c.chunk.js.LICENSE.txt",
     "static/media/Curiosity.jpg": "/ChroniclesOfMars/static/media/Curiosity.93e73d8a.jpg",
     "static/media/Opportunity.jpg": "/ChroniclesOfMars/static/media/Opportunity.739ff717.jpg",
     "static/media/Perseverance.jpg": "/ChroniclesOfMars/static/media/Perseverance.9802841e.jpg",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.99a9b73b.js",
     "static/css/2.f3e600bc.chunk.css",
-    "static/js/2.28903c96.chunk.js",
-    "static/css/main.12c65564.chunk.css",
-    "static/js/main.45c069a6.chunk.js"
+    "static/js/2.f45b220c.chunk.js",
+    "static/css/main.dfc8d254.chunk.css",
+    "static/js/main.3d48b4e8.chunk.js"
   ]
 }
